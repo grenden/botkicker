@@ -6,15 +6,15 @@ from datetime import datetime
 import time,random,sys,re,os,json,subprocess,codecs,threading,glob
 
 me = PRANKBOTS.LINE() 
-me.login(token="you token")
+me.login(token="Ey6Dndl0zEHzNdZtjyOe.nVqDal36OZzmEKfSkjUPlG.M+45u8NjRAEDYQPPSH7LzJAOIfj9ODIvg56TRaUx3dQ=")
 me.loginResult()
 
 kicker1 = PRANKBOTS.LINE() 
-kicker1.login(token="kicker1 token")
+kicker1.login(token="EyvDTfTk9M772k9Oqvie.6GaZ/pkGSlmyqAkjh/7rdG.LfAwAGaNhSgMgdiEyUH4LWg+5c5/72aYbCCrlXmUBSk=")
 kicker1.loginResult()
 
 kicker2 = PRANKBOTS.LINE() 
-kicker2.login(token="kicker2 token")
+kicker2.login(token="Ey1Krv8ANY97gntlX973.rZ64i5V65irdzxQNoFl8yW.WPFAbngk+RGSeE1mpGPktf6+LMRJdvrT6v+D16xHvGs=")
 kicker2.loginResult()
 print "login success"
 reload(sys)
@@ -24,7 +24,7 @@ mid = me.getProfile().mid
 kicker1mid = kicker1.getProfile().mid
 kicker2mid = kicker2.getProfile().mid
 Bots=[mid,kicker1mid,kicker2mid]
-panel = "u0ac948397fbc732bd3bc5ca273faa698"
+panel = "u36f41d00bdfaa3364c7a416c289ba92e"
 Response = "\nrunnerBot\nline://nv/connectedDevices/"
 LineBots = "https://github.com/Aprank/botkicker"
 wait = {
