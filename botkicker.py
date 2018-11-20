@@ -2,19 +2,24 @@
 #FORKED PRANKBOTS
 import PRANKBOTS
 from PRANKBOTS.lib.curve.ttypes import *
+from thrift.unverting import *
+from thrift.TMultiplexedProcessor import *
+from thrift.TSerialization import *
+from thrift.TRecursive import *
+from thrift import transport, protocol, server
 from datetime import datetime
 import time,random,sys,re,os,json,subprocess,codecs,threading,glob
 
 me = PRANKBOTS.LINE() 
-me.login(token="you token")
+me.login(token="Ezgx1eopqzvRWgEvikJ9.FcuMrOXqhOS3oyxH8r2Bsq.Bqdf2rw76Tv9bEcP447MCz0YOOXAg9A2vcLf6bxQrbI=")
 me.loginResult()
 
 kicker1 = PRANKBOTS.LINE() 
-kicker1.login(token="kicker1 token")
+kicker1.login(token="EzQAL4pZvwPl4oKqGcu4.mqKc2MNKlpicxDXNF/VJPa.1OAVhQtCNwFlTAvDk+oUi3UkMmBe+MJQmoFrxJgUjxI=")
 kicker1.loginResult()
 
 kicker2 = PRANKBOTS.LINE() 
-kicker2.login(token="kicker2 token")
+kicker2.login(token="EzxkFzoj18qZMbrOK1Xb.O8CsKbM8a4XX/xCzENKyAW.2V59iNPZ3nteOCXRCU0mo27gF2ABJbjWygFwfqo6XH4=")
 kicker2.loginResult()
 print "login success"
 reload(sys)
@@ -24,7 +29,7 @@ mid = me.getProfile().mid
 kicker1mid = kicker1.getProfile().mid
 kicker2mid = kicker2.getProfile().mid
 Bots=[mid,kicker1mid,kicker2mid]
-panel = "u0ac948397fbc732bd3bc5ca273faa698"
+panel = "u7c2526468c501e8b373985e1f11d9b49"
 Response = "\nrunnerBot\nline://nv/connectedDevices/"
 LineBots = "https://github.com/Aprank/botkicker"
 wait = {
